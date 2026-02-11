@@ -9,9 +9,9 @@
 
     // Process registration form
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register_submit'])) {
-        $username = test_input($_POST['username']);
-        $email = test_input($_POST['email']);
-        $full_name = test_input($_POST['full_name']);
+        $username = 'test_input'($_POST['username']);
+        $email = 'test_input'($_POST['email']);
+        $full_name = 'test_input'($_POST['full_name']);
         $password = $_POST['password'];
         $password_confirm = $_POST['password_confirm'];
 
